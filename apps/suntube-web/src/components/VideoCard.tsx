@@ -20,7 +20,6 @@ export const VideoCard: React.FC<VideoCardProps> = ({ video }) => {
         />
         <div className="st-card-tag" style={{ backgroundColor: 'rgba(0, 0, 0, 0.7)', backdropFilter: 'blur(4px)', color: '#fff', borderRadius: '4px', padding: '4px 8px', fontWeight: 500, fontSize: '12px', bottom: '8px', top: 'auto', right: '8px', left: 'auto' }}>Hype {video.hypeLevel}</div>
       </div>
-      
       <div className="st-card-body" style={{ padding: '12px 0 0 0', display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
         <div className="st-avatar-md" style={{ backgroundColor: 'var(--bg-light, #2a2a2a)', color: 'var(--text-main)', fontWeight: 600, width: '36px', height: '36px', borderRadius: '50%', flexShrink: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>{initial}</div>
         <div style={{ flex: 1, overflow: 'hidden' }}>

@@ -5,11 +5,22 @@ import { HeroVideo } from './HeroVideo';
 
 interface VideoGridProps {
   videos: VideoData[];
+  hideHero?: boolean;
 }
 
-export const VideoGrid: React.FC<VideoGridProps> = ({ videos }) => {
+export const VideoGrid: React.FC<VideoGridProps> = ({ videos, hideHero = false }) => {
   if (videos.length === 0) {
     return <div className="st-null">No se encontraron videos disponibles.</div>;
+  }
+
+  if (hideHero) {
+    return (
+      <div className="st-video-grid">
+        {videos.map(video => (
+          <VideoCard key={video.id} video={video} />
+        ))}
+      </div>
+    );
   }
 
   const featured = [...videos].sort((a, b) => b.hypeLevel - a.hypeLevel)[0];

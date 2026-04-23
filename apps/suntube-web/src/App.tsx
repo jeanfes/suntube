@@ -6,6 +6,7 @@ import { Home } from './pages/Home';
 import { VideoDetail } from './pages/VideoDetail';
 import { History } from './pages/History';
 import { Favorites } from './pages/Favorites';
+import { Search } from './pages/Search';
 import './index.css';
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
               <Route path="/watch/:id" element={<VideoDetail />} />
               <Route path="/history" element={<History />} />
               <Route path="/favorites" element={<Favorites />} />
+              <Route path="/search" element={<Search />} />
             </Routes>
           </div>
         </div>

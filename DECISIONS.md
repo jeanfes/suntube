@@ -1,4 +1,4 @@
-# Decisiones Técnicas - SunTube 🧠
+# Decisiones Técnicas - SunTube
 
 Este documento detalla el enfoque general, las decisiones técnicas y las simplificaciones realizadas durante el desarrollo de la prueba "La Cartelera de Hype Tecnológico".
 

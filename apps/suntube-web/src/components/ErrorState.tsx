@@ -7,14 +7,14 @@ interface ErrorStateProps {
 
 export const ErrorState: React.FC<ErrorStateProps> = ({ retry }) => {
   return (
-    <div 
-      className="st-null" 
-      style={{ 
-        display: 'flex', 
-        flexDirection: 'column', 
-        alignItems: 'center', 
-        justifyContent: 'center', 
-        height: '100%', 
+    <div
+      className="st-null"
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        height: '100%',
         minHeight: 'calc(100vh - 200px)',
         width: '100%',
         textAlign: 'center'
